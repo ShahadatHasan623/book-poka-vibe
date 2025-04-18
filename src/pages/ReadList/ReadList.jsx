@@ -21,7 +21,7 @@ const ReadList = () => {
     setReadlist(myReadList);
   }, []);
   const handleSort =(type)=>{
-        // setSort(type)
+        setSort(type)
         if(type==="pages"){
             const sortedByPage =[...readlist].sort((a,b)=>a.totalPages-b.totalPages);
             setReadlist(sortedByPage)
